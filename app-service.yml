@@ -9,3 +9,6 @@ server:
   port: 8080
 app:
   url: http://test/${spring.application.name}
+  db:
+    username: usuario_de_base_de_datos
+    password: super_secret_password
