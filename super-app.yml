@@ -4,3 +4,10 @@ server:
   port: 8081
 app:
   saludo: Hola Compañeros
+---
+spring:
+  profiles: cert
+server:
+  port: 9090
+app:
+  saludo: SkyNEt dominara al Mundo
