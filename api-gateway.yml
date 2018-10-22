@@ -10,4 +10,12 @@ eureka:
     serviceUrl:
       defaultZone: http://localhost:8761/eureka/
 zuul:
+  ignoredServices: '*'
+  routes:
+    app-externa: /app-externa/**
+  #routes:
+  #  users:
+  #    path: /app/**
+  #    serviceId: app-externa
   sensitiveHeaders: Cookie,Set-Cookie
+  
