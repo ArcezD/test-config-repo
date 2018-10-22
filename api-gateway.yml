@@ -13,6 +13,7 @@ zuul:
   ignoredServices: '*'
   routes:
     app-externa: /app-externa/**
+    app-interna: /app-interna/**
   #routes:
   #  users:
   #    path: /app/**
