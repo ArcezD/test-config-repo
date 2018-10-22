@@ -18,4 +18,7 @@ zuul:
   #    path: /app/**
   #    serviceId: app-externa
   sensitiveHeaders: Cookie,Set-Cookie
+
+gateway:
+  private: app-interna
   
