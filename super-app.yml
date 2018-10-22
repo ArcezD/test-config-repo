@@ -1,5 +1,7 @@
 spring:
-  profiles: dev
+  application:
+    name: app-interna
+  profiles: dev01
 server:
   port: 8081
 eureka:
@@ -10,7 +12,23 @@ eureka:
     serviceUrl:
       defaultZone: http://localhost:8761/eureka/
 app:
-  saludo: Hola Compañeros
+  saludo: Hola compañeros
+---
+spring:
+  application:
+    name: app-externa
+  profiles: dev02
+server:
+  port: 8082
+eureka:
+  instance:
+    leaseRenewalIntervalInSeconds: 10
+  client:
+    registryFetchIntervalSeconds: 5
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+app:
+  saludo: Hola clientes
 ---
 spring:
   profiles: cert
