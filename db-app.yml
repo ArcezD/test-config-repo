@@ -3,7 +3,7 @@ spring:
     name: db-app
   profiles: dev
 server:
-  port: 1001
+  port: 9001
 eureka:
   instance:
     leaseRenewalIntervalInSeconds: 10
