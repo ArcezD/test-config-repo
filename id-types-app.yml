@@ -17,3 +17,23 @@ management:
     web:
       exposure:
         include: '*'
+---
+spring:
+  application:
+    name: id-types-app
+  profiles: dev02
+server:
+  port: 9003
+eureka:
+  instance:
+    leaseRenewalIntervalInSeconds: 10
+  client:
+    registryFetchIntervalSeconds: 5
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
