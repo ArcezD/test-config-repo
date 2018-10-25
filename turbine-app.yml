@@ -14,5 +14,5 @@ eureka:
 
 turbine:
   aggregator:
-    clusterConfig: GM
+    clusterConfig: ID-TYPES-APP
   appConfig: id-types-app
