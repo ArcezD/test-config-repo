@@ -1,0 +1,10 @@
+version: '3'
+services:
+  config:
+    image: arcezd/config:0.0.1
+    networks:
+      - gm_net
+
+networks:
+  gm_net:
+    external: true
